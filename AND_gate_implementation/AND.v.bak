@@ -1,0 +1,12 @@
+//???_E94081149
+//use NAND gate to represent AND gate
+module AND (c, a, b);
+
+  input a,b;
+  output c;
+  wire n0;
+
+  nand u0 (n0, a, b);
+  nand u1 (c, n0, n0);
+
+endmodule
